@@ -1,0 +1,30 @@
+{
+  "name": "pokebattlerts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LewisMoore0/PokeBattlerTS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LewisMoore0/PokeBattlerTS/issues"
+  },
+  "homepage": "https://github.com/LewisMoore0/PokeBattlerTS#readme",
+  "dependencies": {
+    "jest": "^29.5.0",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-typescript": "^7.21.4",
+    "@tsconfig/node18": "^1.0.1",
+    "babel-jest": "^29.5.0"
+  }
+}
