@@ -15,4 +15,9 @@ describe('Pokemon', () => {
         const pokemon = new Pokemon('Lewis', 50, 10)
         expect(pokemon.attackDamage).toEqual(10)
     })
+
+    test('should have move prop default to tackle', () => {
+        const pokemon = new Pokemon('Lewis', 50, 10)
+        expect(pokemon.move).toEqual('tackle')
+    })
 })
