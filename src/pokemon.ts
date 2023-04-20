@@ -10,4 +10,9 @@ export default class Pokemon {
         this.attackDamage = attackDamage
         this.move = 'tackle'
     }
+
+    takeDamage(damage: number){
+        this.health -= damage
+        return `${this.name} took ${damage} damage!`
+    }
 }

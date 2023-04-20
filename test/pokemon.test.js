@@ -20,4 +20,10 @@ describe('Pokemon', () => {
         const pokemon = new Pokemon('Lewis', 50, 10)
         expect(pokemon.move).toEqual('tackle')
     })
+
+    test('takeDamage method reduces pokemons health by given number', () =>{
+        const pokemon = new Pokemon('Lewis', 50, 10)
+        expect(pokemon.takeDamage(10)).toEqual('Lewis took 10 damage!')
+        expect(pokemon.health).toBe(40)
+    })
 })
