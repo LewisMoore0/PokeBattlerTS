@@ -23,4 +23,4 @@ export default class Pokemon {
     hasFainted(): boolean {
         return this.health <= 0 ? true : false
     }
-} 
+}  
