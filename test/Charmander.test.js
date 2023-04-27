@@ -8,7 +8,7 @@ describe('Charmander', () => {
     })
 
     test('should have move property of Ember', () => {
-        const charmander = new Charmander('steve', 100, 15, 'Ember')
+        const charmander = new Charmander('steve', 100, 15)
         expect(charmander.move).toEqual('Ember')
     })
 })
