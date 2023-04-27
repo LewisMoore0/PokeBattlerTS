@@ -4,11 +4,11 @@ export default class Pokemon {
     attackDamage: number
     move: string
 
-    constructor(name: string, health: number, attackDamage: number){
+    constructor(name: string, health: number, attackDamage: number, move: string = 'tackle'){
         this.name = name
         this.health = health
         this.attackDamage = attackDamage
-        this.move = 'tackle'
+        this.move = move
     }
 
     takeDamage(damage: number): string{
