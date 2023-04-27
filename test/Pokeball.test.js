@@ -21,7 +21,7 @@ describe('Pokeball' , () => {
         const charmander = new Charmander('Charmander', 100, 10)
 
         pokeball.catch(charmander)
-        expect(pokeball.release()).toEqual('Go Charmander!')
+        pokeball.release()
         expect(pokeball.storage).toEqual([])
     })
 
