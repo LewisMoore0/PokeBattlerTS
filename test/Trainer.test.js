@@ -27,4 +27,13 @@ describe('Trainer', () => {
         trainer.catch(squirtle)
         expect(trainer.belt[1].storage[0]).toEqual(squirtle)
     })
+
+    test('getPokemon function returns pokemon given in argument', () => {
+        const trainer = new Trainer
+        const charmander = new Charmander('charmander')
+        trainer.catch(charmander)
+
+        expect(trainer.getPokemon('charmander')).toEqual(charmander)
+        
+    })
 })

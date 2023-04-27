@@ -18,4 +18,12 @@ export default class Trainer {
             return true
         })
     }
+
+    getPokemon(pokemonName: string){
+        for (let pokeball of this.belt) {
+            if (pokeball.storage[0].name === pokemonName) {
+                return pokeball.storage[0]
+            }
+        }
+    }
 }
