@@ -37,5 +37,13 @@ export default class Battle {
             }
         }
         this.switchTurns()
+
+        if(pokemon1.hasFainted()){
+            return `${pokemon2.name} wins!`
+        } else if ( pokemon2.hasFainted()){
+            return `${pokemon2.name} wins!`
+        } else {
+            this.fight(pokemon1, pokemon2)
+        }
     }
 }
