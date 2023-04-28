@@ -11,11 +11,17 @@ export default class Pokeball {
         return `You caught ${pokemon.name}!`
     }
 
-    release() {
+    release(): string {
         if (this.isEmpty()) {
             return 'This pokeball is empty!'
         }
-        this.storage.pop()
+        let pokemon = this.storage.pop()
+
+        if (pokemon === undefined) {
+            throw Error
+        }
+        
+        return `Go ${pokemon.name}!`
        
     }
 
