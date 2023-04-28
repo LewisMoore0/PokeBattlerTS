@@ -33,7 +33,8 @@ describe('Trainer', () => {
         const charmander = new Charmander('charmander')
         trainer.catch(charmander)
 
-        expect(trainer.getPokemon('charmander')).toEqual(charmander)
+        trainer.getPokemon('charmander')
+        expect(trainer.belt[0].storage).toEqual([])
         
     })
 })
